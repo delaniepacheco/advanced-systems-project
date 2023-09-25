@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>User Profile</h1>
+    </header>
+    
+    <main>
+        <section id="user-info">
+            <h2>User Information</h2>
+            <div id="user-details">
+                <div>
+                    <label for="username">Username:</label>
+                    <span id="username">JohnDoe123</span>
+                </div>
+                <div>
+                    <label for="fullname">Full Name:</label>
+                    <span id="fullname">John Doe</span>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <span id="email">johndoe@example.com</span>
+                </div>
+                <div>
+                    <label for="profile-picture">Profile Picture:</label>
+                    <img id="profile-picture" src="default-profile-picture.jpg" alt="Profile Picture">
+                    <input type="file" id="new-profile-picture" accept="image/*">
+                </div>
+            </div>
+            <button id="edit-profile-button">Edit Profile</button>
+        </section>
+
+        <section id="edit-profile" style="display: none;">
+            <h2>Edit Profile</h2>
+            <form id="profile-form">
+                <div>
+                    <label for="new-username">New Username:</label>
+                    <input type="text" id="new-username" name="new-username" required>
+                </div>
+                <div>
+                    <label for="new-fullname">New Full Name:</label>
+                    <input type="text" id="new-fullname" name="new-fullname" required>
+                </div>
+                <div>
+                    <label for="new-email">New Email:</label>
+                    <input type="email" id="new-email" name="new-email" required>
+                </div>
+                <div>
+                    <label for="new-password">New Password:</label>
+                    <input type="password" id="new-password" name="new-password">
+                </div>
+                <button type="submit">Save Changes</button>
+                <button type="button" id="cancel-edit-button">Cancel</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Company Name</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

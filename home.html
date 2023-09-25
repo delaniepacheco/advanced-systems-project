@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Greeting Card Website</title>
+    <!--CSS LINK-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <header>
+       <a href="#" class="logo"><img src="hellogift.png"></a>
+
+    <ul class="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="cards.html">Cards</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+
+    </ul>
+
+    <div class="nav-icons">
+        <a href="cart.html"><i class='bx bxs-shopping-bag'></i> </a>
+        <a href="contact.html"><i class='bx bxs-phone'></i></a>
+        <a href="#"><i class='bx bxs-heart'></i></a>
+        <a href="#"><i class='bx bx-menu'></i></a>
+
+        <img src="userpicture.png" class="user-pic" onclick="toggleMenu()">
+
+
+<div class="dropdown">
+<div class="sub-menu-wrap" id="subMenu">
+<div class="sub-menu">
+    <div class="user-info">
+        <img src="userpicture.png">
+        <h3>Jackson Haney</h3>
+    </div>
+    <hr>
+
+    <a href="#" class="sub-menu-link">
+        <img src="userpicture.png">
+        <p>Edit Profile</p>
+        <span> > </span>
+    </a>
+    <a href="#" class="sub-menu-link">
+        <img src="settings.png">
+        <p>Settings</p>
+        <span> > </span>
+    </a>
+    <a href="contact.html" class="sub-menu-link">
+        <img src="contactus.png">
+        <p>Coontact Us</p>
+        <span> > </span>
+    </a>
+    <a href="#" class="sub-menu-link">
+        <img src="logout.png">
+        <p>Logout</p>
+        <span> > </span>
+    </a>
+</div>
+</div>
+</div>
+
+</header>
+
+<section class="main-home">
+    <div class="main-text">
+        <h1>Customize Your Holiday Greeting</h1>
+        <h5>Shop Our New Winter Customizable Cards</h5>
+        <p>Where heartfelt connections come to life through <br> the art of gifting.</p>
+
+        <a href="#" class="main-btn">Choose A Card</a>
+    </div>
+
+</section>
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
+
+</body>
+</html>

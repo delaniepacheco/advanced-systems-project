@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="ShoppingCart.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+    
+    <main>
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul>
+                <!-- Cart items will be dynamically generated here -->
+            </ul>
+            <div id="cart-total">
+                <p>Total: $0.00</p>
+            </div>
+            <button id="checkout-button">Checkout</button>
+        </section>
+
+        <section id="products">
+            <h2>Available Products</h2>
+            <ul>
+                <!-- Product listings will be dynamically generated here -->
+                <li>
+                    <span class="product-name">Product 1</span>
+                    <span class="product-price">$10.00</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
+                <li>
+                    <span class="product-name">Product 2</span>
+                    <span class="product-price">$15.00</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </li>
+                <!-- Add more product listings as needed -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Company Name</p>
+    </footer>
+
+    <script src="ShoppingCart.js"></script>
+</body>
+</html>
